@@ -140,7 +140,7 @@ if(SHOW_CODE_LOCATION)
 endif()
 
 # uncoment next line for testnet
-set(BEAM_TESTNET TRUE)
+#set(BEAM_TESTNET TRUE)
 # uncoment next line for mainnet
 #set(BEAM_MAINNET TRUE)
 
