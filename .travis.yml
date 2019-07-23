@@ -180,14 +180,14 @@ matrix:
         - export BEAM_WALLET_UI_OUT_VERLESS="Beam-Wallet$BEAM_DISPLAY_SUFFIX2.deb"
 
 ###############################################################################
-# Android x86 Release
+# Android x86 Debug
 ###############################################################################
 
     - os: linux
       language: android
       env:
         - ANDROID_ABI=x86
-        - BUILD_TYPE=Release
+        - BUILD_TYPE=Debug
         - ANDROID_SDK_VERSION=23
       android:
         components:
@@ -221,14 +221,14 @@ matrix:
         - artifacts upload --target-paths "$TRAVIS_BRANCH/latest/$BUILD_TYPE/android-$ANDROID_ABI/" libwallet-jni.tar.gz
 
 ###############################################################################
-# Android x86_64 Release
+# Android x86_64 Debug
 ###############################################################################
 
     - os: linux
       language: android
       env:
         - ANDROID_ABI=x86_64
-        - BUILD_TYPE=Release
+        - BUILD_TYPE=Debug
         - ANDROID_SDK_VERSION=23
       android:
         components:
@@ -262,14 +262,14 @@ matrix:
         - artifacts upload --target-paths "$TRAVIS_BRANCH/latest/$BUILD_TYPE/android-$ANDROID_ABI/" libwallet-jni.tar.gz
 
 ###############################################################################
-# Android ARMv7 Release
+# Android ARMv7 Debug
 ###############################################################################
 
     - os: linux
       language: android
       env:
         - ANDROID_ABI=armeabi-v7a
-        - BUILD_TYPE=Release
+        - BUILD_TYPE=Debug
         - ANDROID_SDK_VERSION=23
       android:
         components:
@@ -303,14 +303,14 @@ matrix:
         - artifacts upload --target-paths "$TRAVIS_BRANCH/latest/$BUILD_TYPE/android-$ANDROID_ABI/" libwallet-jni.tar.gz
 
 ###############################################################################
-# Android ARMv8 Release
+# Android ARMv8 Debug
 ###############################################################################
 
     - os: linux
       language: android
       env:
         - ANDROID_ABI=arm64-v8a
-        - BUILD_TYPE=Release
+        - BUILD_TYPE=Debug
         - ANDROID_SDK_VERSION=23
       android:
         components:
